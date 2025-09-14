@@ -1,8 +1,9 @@
-// Arquivo: src/components/MensagemLogin.jsx
 import { useState } from "react";
+
 export default function MensagemLogin() {
   const [autenticado, setAutenticado] = useState(false);
   const [nome, setNome] = useState("Patrícia");
+
   return (
     <section>
       <h2>Renderização Condicional</h2>

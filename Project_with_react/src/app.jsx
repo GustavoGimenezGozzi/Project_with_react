@@ -44,7 +44,8 @@ export default function App() {
 }
 */
 
-// 4. ESTADO COM OBJETOS E ARRAYS (ATIVO)
+// 4. ESTADO COM OBJETOS E ARRAYS
+/*
 import UsuarioInfo from "./components/UsuarioInfo";
 import ListaNumeros from "./components/ListaNumeros";
 export default function App() {
@@ -57,6 +58,7 @@ export default function App() {
     </main>
   );
 }
+*/
 
 // 5. ATUALIZAÇÕES SEGURAS DE ESTADO
 /*
@@ -71,17 +73,42 @@ export default function App() {
 }
 */
 
-// 6. CICLO DE VIDA COM useEffect
-/*
+// 6. CICLO DE VIDA COM useEffect (ATIVO - AULA 03/09/2025)
 import CicloDeVida from "./components/CicloDeVida";
+import BotaoEvento from "./components/BotaoEvento";
+import TextoDinamico from "./components/TextoDinamico";
+import MensagemLogin from "./components/MensagemLogin";
+import MensagemUsuario from "./components/MensagemUsuario";
+import ListaNomes from "./components/ListaNomes";
+import ListaComIds from "./components/ListaComIds";
+
 export default function App() {
   return (
     <main style={{ fontFamily: "sans-serif", padding: 16 }}>
+      <h1>Aula 03/09/2025 - Efeitos, Eventos, Virtual DOM, Condicionais e Listas</h1>
+      
       <CicloDeVida />
+      <hr />
+      
+      <BotaoEvento />
+      <hr />
+      
+      <TextoDinamico />
+      <hr />
+      
+      <MensagemLogin />
+      <hr />
+      
+      <MensagemUsuario ok={false} nome="Carlos" />
+      <hr />
+      
+      <ListaNomes />
+      <hr />
+      
+      <ListaComIds />
     </main>
   );
 }
-*/
 
 // 7. EVENTOS: onClick, onChange, onSubmit
 /*

@@ -1,15 +1,18 @@
-// Arquivo: src/components/BotaoEvento.jsx
 import { useState } from "react";
+
 export default function BotaoEvento() {
   const [nome, setNome] = useState("");
   const [mensagem, setMensagem] = useState("");
+
   function handleClick() {
     setMensagem(`Olá, ${nome || "visitante"}!`);
   }
+
   function handleSubmit(e) {
     e.preventDefault();
     setMensagem(`Form enviado por: ${nome || "sem nome"}`);
   }
+
   return (
     <section>
       <h2>Eventos: onClick, onChange, onSubmit</h2>

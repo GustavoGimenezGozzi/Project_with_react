@@ -1,6 +1,6 @@
-// Arquivo: src/components/ListaNomes.jsx
 export default function ListaNomes() {
   const nomes = ["Ana", "Bruno", "Carla", "Diego"];
+
   return (
     <section>
       <h2>Lista de Nomes</h2>
